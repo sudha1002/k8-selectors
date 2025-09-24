@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-anti-affinity
+  name: pod-1
   labels:
     app-name: pod-1
 spec:
@@ -13,7 +13,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-affinity
+  name: pod-2
   labels:
     app-name: pod-2
 spec:
