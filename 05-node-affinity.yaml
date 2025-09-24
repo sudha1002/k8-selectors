@@ -21,7 +21,7 @@ spec:
     ports:
     - containerPort: 80
   tolerations:
-  - key: "key1"
+  - key: "hardware"
     operator: "Equal"
-    value: "value1"
+    value: "gpu"
     effect: "NoExecute"  
