@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: affinity
+  name: anty-affinity
   labels:
-    purpose: "affinity-demo"
+    purpose: "anty-affinity-demo"
 spec:
   affinity:
     nodeAffinity:
