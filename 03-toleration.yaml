@@ -5,8 +5,7 @@ metadata:
   labels:
     purpose: "toleration-demo"
 spec:
-  nodeselector:
-     
+  
   containers:
   - name: nginx
     image: nginx
