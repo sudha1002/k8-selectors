@@ -5,15 +5,13 @@ metadata:
   labels:
     purpose: "toleration-demo"
 spec:
-  nodeselector:
-     
   containers:
   - name: nginx
     image: nginx
     ports:
     - containerPort: 80
   tolerations:
-  - key: "key1"
+  - key: "hardware"
     operator: "Equal"
-    value: "value1"
+    value: "gpu"
     effect: "NoExecute"  
