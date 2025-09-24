@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: toleration1
+  labels:
+    purpose: "toleration-demo"
+spec:
+  nodeselector:
+     
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
+  tolerations:
+  - key: "key1"
+    operator: "Equal"
+    value: "value1"
+    effect: "NoExecute"  
